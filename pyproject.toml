@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "justindide-toolschema"
+version = "0.1.0"
+description = "比对工具描述、参数模式与实现行为，标出描述与实现不符的地方。"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "justindide" }]
+keywords = ["tools", "schema", "function-calling", "llm"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://justindide.github.io"
+Repository = "https://github.com/justindide/toolschema"
+Issues = "https://github.com/justindide/toolschema/issues"
+
+[project.scripts]
+toolschema = "toolschema:main"
+
+[tool.setuptools]
+py-modules = ["toolschema"]
